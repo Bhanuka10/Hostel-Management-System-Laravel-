@@ -14,7 +14,7 @@
         <h1 class="text-center"> Wellcome {{ Auth::user()->name }}</h1>
         @include('Nav bar.navbar')
         <div class="d-flex justify-content-center mt-4" style="gap: 30px; width: 1100px">
-            <!-- Profile Card -->
+
             <div class="card-body p-4"
                 style="background-color:#f8f9fa; width: 350px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                 @if(isset($sProfile))
