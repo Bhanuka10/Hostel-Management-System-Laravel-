@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
       display: flex;
       flex-direction: column;
     }
+
     .sidebar {
       min-height: 100vh;
       width: 240px;
@@ -21,15 +23,18 @@
       color: white;
       padding-top: 20px;
     }
+
     .sidebar a {
       color: white;
       display: block;
       padding: 12px 20px;
       text-decoration: none;
     }
+
     .sidebar a:hover {
       background: #495057;
     }
+
     .content {
       margin-left: 240px;
       padding: 20px;
@@ -37,6 +42,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Sidebar -->
@@ -46,18 +52,17 @@
     <a href="/a_room"><i class="bi bi-building"></i> Add Hostels</a>
     <a href="/messages/create"><i class="bi bi-envelope-fill"></i> Messages</a>
     <a href="{{ route('admin.complaints.index') }}"><i class="bi bi-exclamation-triangle"></i> Complaints</a>
-    <a href="{{ route('admin.logout') }}"
-       onclick="event.preventDefault();
+    <a href="{{ route('admin.logout') }}" onclick="event.preventDefault();
                  document.getElementById('logout-form').submit();">
-        <i class="bi bi-box-arrow-right"></i> Logout
+      <i class="bi bi-box-arrow-right"></i> Logout
     </a>
 
     <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" class="d-none">
-        @csrf
+      @csrf
     </form>
   </div>
 
-  
+
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -65,4 +70,5 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
