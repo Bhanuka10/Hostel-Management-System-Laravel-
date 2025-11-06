@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 body {
-  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  background: linear-gradient(120deg, #e0eafc 0%, #93bdf7 100%);
   min-height: 100vh;
   font-family: 'Roboto', Arial, sans-serif;
   display: flex;
@@ -31,6 +31,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-color: #6dd5ed;
+  border-radius: 2rem;
 }
 
 .login-image {
