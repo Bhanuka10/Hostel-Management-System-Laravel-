@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     color: #222;
     letter-spacing: 0.02em;
-    transition: background 0.4s;
+    transition: 0.4s;
 }
 
 .container {
